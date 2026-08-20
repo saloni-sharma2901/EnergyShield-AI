@@ -1,0 +1,98 @@
+import React from "react";
+import {
+    FaNewspaper,
+    FaBrain,
+    FaChartBar,
+    FaBell,
+} from "react-icons/fa";
+
+function HowItWorks() {
+    const steps = [
+        {
+            icon: <FaNewspaper className="text-5xl text-blue-400" />,
+            title: "Collect Data",
+            desc: "AI gathers real-time news, geopolitical events, weather updates and market information from trusted global sources."
+        },
+        {
+            icon: <FaBrain className="text-5xl text-cyan-400" />,
+            title: "AI Analysis",
+            desc: "Machine learning models analyze millions of data points to identify risks and predict disruptions."
+        },
+        {
+            icon: <FaChartBar className="text-5xl text-green-400" />,
+            title: "Risk Prediction",
+            desc: "Generate confidence scores, risk levels and interactive dashboards for quick decision making."
+        },
+        {
+            icon: <FaBell className="text-5xl text-yellow-400" />,
+            title: "Smart Alerts",
+            desc: "Receive instant notifications and recommendations before disruptions affect the supply chain."
+        },
+    ];
+
+    return (
+        <section className="bg-slate-900 py-24">
+            <div className="max-w-7xl mx-auto px-6">
+
+                <div
+                    className="text-center mb-16"
+                    data-aos="fade-up"
+                >
+                    <h2 className="text-5xl font-bold text-white">
+                        How EnergyShield AI Works
+                    </h2>
+
+                    <p className="text-slate-400 mt-6 text-lg max-w-3xl mx-auto">
+                        Our AI continuously monitors global events and transforms
+                        complex information into simple actionable insights.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    {steps.map((step, index) => (
+                        <div
+                            key={index}
+                            data-aos="zoom-in"
+                            className="bg-slate-950 border border-slate-800 rounded-3xl p-8 text-center hover:border-blue-500 hover:-translate-y-2 transition-all duration-300 shadow-xl"
+                        >
+                            <div className="flex justify-center mb-6">
+                                {step.icon}
+                            </div>
+
+                            <h3 className="text-2xl font-bold text-white">
+                                {step.title}
+                            </h3>
+
+                            <p className="text-slate-400 mt-4 leading-7">
+                                {step.desc}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+
+                <div
+                    className="mt-20 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-10 text-center shadow-2xl"
+                    data-aos="fade-up"
+                >
+                    <h2 className="text-4xl font-bold text-white">
+                        AI That Predicts Before Problems Happen
+                    </h2>
+
+                    <p className="text-blue-100 mt-5 text-lg max-w-3xl mx-auto leading-8">
+                        EnergyShield AI provides predictive intelligence, live monitoring,
+                        and instant alerts so organizations can respond to supply chain
+                        disruptions before they become critical.
+                    </p>
+
+                    <button className="mt-8 px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg">
+                        Learn More
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    );
+}
+
+export default HowItWorks;

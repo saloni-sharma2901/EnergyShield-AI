@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    text-align: center;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    color: #cbd5e1;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.overlay button {
+    padding: 14px 35px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #1d4ed8;
+}
