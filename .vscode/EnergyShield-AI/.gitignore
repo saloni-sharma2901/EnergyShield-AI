@@ -1,0 +1,38 @@
+# Environment variables
+.env
+server/.env
+client/.env
+
+# Dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# VS Code
+.vscode/
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
