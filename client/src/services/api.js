@@ -1,4 +1,4 @@
-Const API_URL = "https://energyshield-ai.onrender.com";
+const API_URL = "https://energyshield-ai.onrender.com";
 
 export const api = async (endpoint, options = {}) => {
     const token = localStorage.getItem("token");

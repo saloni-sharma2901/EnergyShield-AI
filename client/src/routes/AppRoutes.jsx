@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
-import Register from "../pages/Register.jsx";
+import Register from "../pages/Register.js
 
 function AppRoutes() {
     return (
